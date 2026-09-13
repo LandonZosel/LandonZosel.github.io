@@ -1,0 +1,56 @@
+/* Adjust header and top-level heading to have color and style */
+header {
+    background-color: navy;
+    padding-left: 15px;
+}
+
+h1 {
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+#welcomeMessage {
+    background-color: navy;
+    width: fit-content;
+    padding: 20px 15px;
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Adjust table with anchors and hrefs to be centered */
+table {
+    text-align: center;
+}
+
+#projectsDiv {
+    background-color: lightpink;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projectsHeader {
+    text-align: center;
+}
+
+/* Adjust footer to have color and force bottom of the page */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+footer {
+    background-color: aqua;
+}
+
+/* other */
+#imagesDiv {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
