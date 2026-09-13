@@ -33,7 +33,7 @@ table {
     margin-right: auto;
 }
 
-#projectsHeader {
+.centerHeader {
     text-align: center;
 }
 
@@ -45,7 +45,8 @@ body {
 }
 
 footer {
-    background-color: aqua;
+    background-color: burlywood;
+    padding: 15px 15px;
 }
 
 /* other */

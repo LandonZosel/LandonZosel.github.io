@@ -4,7 +4,6 @@ ul {
     display: flex;
 }
 
-
 li {
     /* 2. li change background color */
     background-color: rgb(1, 26, 249);
@@ -35,7 +34,6 @@ li {
 
 /* 5. move p in footer to right side of screen */
 footer p {
-    background-color: red;
     color: white;
     text-align: end;
 }
@@ -50,11 +48,30 @@ img {
 div {
     position: relative;
     display: inline-block;
+    align-self: flex-start;
+}
+
+img {
+    display: block;
 }
 
 span {
     position: absolute;
     bottom: 10px;
     right: 10px;
+    margin: 0;
     color: white;
+}
+
+/* other */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: darkred;
+    margin-top: auto;
+    padding-right: 15px;
 }
