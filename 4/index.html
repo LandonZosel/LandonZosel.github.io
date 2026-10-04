@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Landon Zosel">
-    <meta name="description" content="The landing page for CSCI 3054 activities and projects">
-    <meta name="keywords" content="Landon,Zosel,CSCI3054">
+    <meta name="description" content="A website detailing information about the orchestra">
+    <meta name="keywords" content="Landon,Zosel,Music,Orchestra">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Website</title>
-    <!-- <link rel="icon" href="img/rainbow.ico"> -->
+    <title>The Orchestra</title>
+    <link rel="icon" href="img/music.ico">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,22 +16,25 @@
             <p class="headerTitle">The Orchestra</p>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Instruments</a></li>
-                    <li><a href="index.html">Music Theory</a></li>
-                    <li><a href="index.html">Contact Us</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="two-step-pages/index.html">Instruments</a></li>
+                    <li><a href="static-page/index.html">Music Theory</a></li>
+                    <li><a href="contact-us-page/index.html">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
         <main class="mainContainer">
             <div class="pageTitleContainer">
-                <h1>What is an Orchestra?</h1>
+                <h1>The Orchestra</h1>
+            </div>
+            <div class="pageHeaderContainer">
+                <h2>What is an orchestra?</h2>
             </div>
             <div class="rowContainer">
                 <div class="textContainer"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus augue imperdiet ligula egestas porttitor. Fusce sodales magna ac orci ultricies, sed hendrerit quam placerat. Phasellus dapibus, dui id cursus scelerisque, augue diam convallis nisl, id congue orci turpis vestibulum ligula. Pellentesque varius ipsum ligula, et luctus erat ornare in. Mauris volutpat sem odio, in laoreet ex pharetra vel. Vestibulum cursus sodales facilisis. Sed sagittis porta orci eget dapibus. Curabitur a enim sagittis, blandit nulla vitae, faucibus nibh. Fusce finibus mauris orci, nec mattis elit aliquam quis. Praesent ac sapien fermentum elit posuere iaculis vel sit amet odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris rhoncus ut turpis ac blandit. Maecenas ultrices pharetra mi sit amet vehicula. Donec sit amet lacus quam. Pellentesque fermentum lacinia odio, eget tristique mi faucibus quis.</p></div>
-                <div class="imageContainer">
+                <div class="figureContainer">
                     <figure>
-                        <img src="img/orchestra.jpg" alt="A group of musicians on a stage">
+                        <img class="bigImage" src="img/orchestra.jpg" alt="A group of musicians on a stage">
                         <figcaption>
                             A group of musicians on a stage.
                         </figcaption>
@@ -39,9 +42,44 @@
                 </div>
             </div>
             <br>
-            <div class ="audioContainer">
-                <audio controls src="audio/tambourine.mp3"></audio>
+            <div class ="figureContainer">
+                <figure>
+                    <audio class="audioSpacing" controls src="audio/tambourine.mp3"></audio>
+                    <figcaption>
+                        A tambourine.
+                    </figcaption>
+                </figure>
             </div>
+            <br>
+            <div class="columnContainer">
+                <div class="columnContainer">
+                    <div class="pageHeaderContainer">
+                        <h2>What makes it different from other ensembles?</h2>
+                    </div>
+                    <div class="textContainer"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus augue imperdiet ligula egestas porttitor. Fusce sodales magna ac orci ultricies, sed hendrerit quam placerat. Phasellus dapibus, dui id cursus scelerisque, augue diam convallis nisl, id congue orci turpis vestibulum ligula. Pellentesque varius ipsum ligula, et luctus erat ornare in. Mauris volutpat sem odio, in laoreet ex pharetra vel. Vestibulum cursus sodales facilisis. Sed sagittis porta orci eget dapibus. Curabitur a enim sagittis, blandit nulla vitae, faucibus nibh. Fusce finibus mauris orci, nec mattis elit aliquam quis. Praesent ac sapien fermentum elit posuere iaculis vel sit amet odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris rhoncus ut turpis ac blandit. Maecenas ultrices pharetra mi sit amet vehicula. Donec sit amet lacus quam. Pellentesque fermentum lacinia odio, eget tristique mi faucibus quis.</p></div>
+                </div>
+                <div class="rowContainer">
+                    <div class="figureContainer">
+                        <figure>
+                            <img class="mediumImage" src="img/orchestra.jpg" alt="A group of musicians on a stage">
+                            <audio class="audioSpacing" controls src="audio/tambourine.mp3"></audio>
+                            <figcaption>
+                                A group of musicians on a stage.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="figureContainer">
+                        <figure>
+                            <img class="mediumImage" src="img/orchestra.jpg" alt="A group of musicians on a stage">
+                            <audio class="audioSpacing" controls src="audio/tambourine.mp3"></audio>
+                            <figcaption>
+                                A group of musicians on a stage.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <br>
         </main>
         <footer>
             <div>

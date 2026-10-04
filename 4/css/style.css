@@ -1,6 +1,5 @@
 * {
     /* outline: 2px solid red; */
-    /* box-sizing: border-box; */
 }
 
 /* general site containers for header and footer spacing*/
@@ -84,20 +83,28 @@ nav ul li a {
 .pageTitleContainer {
     display: flex;
     justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
 }
 
-.pageTitleContainer h1 {
+.pageHeaderContainer {
+    display: flex;
+    justify-content: start;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* font-size: 1.5em; */
     color: black;
-    /* margin-left: 1.25em; */
+    margin-left: 2em;
+}
+
+.centerHeader {
+    justify-content: center;
+    margin-left: 0;
 }
 
 /* group containers */
 .rowContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     /* max-width: 100dvh; */
     /* flex-wrap: wrap; */
@@ -138,21 +145,49 @@ nav ul li a {
     color: rgb(50, 63, 78);
 }
 
+figcaption {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-size: 1.5em; */
+
+    /* padding: 10px; */
+    
+    /* color: rgb(50, 63, 78); */
+}
+
 /* images */
-.imageContainer {
+.figureContainer {
     display: flex;
+    flex-direction: column;
 }
 
-.imageContainer figure {
-    margin: 0;
+.figureContainer figure {
+    margin: 0.25em;
     padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.imageContainer img {
-    /* border-color: black; */
+.bigImage {
     border: 0.2em solid black;
-    /* border-radius: 10px; */
     max-width: 90vw;
+}
+
+.mediumImage {
+    border: 0.2em solid black;
+    max-width: 90vw;
+}
+
+.smallImage {
+    border: 0.2em solid black;
+    max-width: 90vw;
+}
+
+/* audio */
+.audioSpacing {
+    margin: 0.25em;
 }
 
 /* ipad rules */
@@ -180,7 +215,15 @@ nav ul li a {
         flex-direction: row;
     }
 
-    .imageContainer {
+    .figureContainer {
         margin: 0.75em;
+    }
+
+    .mediumImage {
+        max-width: 40vw;
+    }
+
+    .smallImage {
+        max-width: 30vw;
     }
 }
