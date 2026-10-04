@@ -172,17 +172,26 @@ figcaption {
 
 .bigImage {
     border: 0.2em solid black;
-    max-width: 90vw;
+    width: 90%;
+    max-width: 460px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .mediumImage {
     border: 0.2em solid black;
-    max-width: 90vw;
+    width: 90%;
+    max-width: 460px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .smallImage {
     border: 0.2em solid black;
-    max-width: 90vw;
+    width: 90%;
+    max-width: 460px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 /* audio */
@@ -219,11 +228,18 @@ figcaption {
         margin: 0.75em;
     }
 
+    .bigImage {
+        width: auto;
+        max-width: 50vw;
+    }
+
     .mediumImage {
+        width: auto;
         max-width: 40vw;
     }
 
     .smallImage {
+        width: auto;
         max-width: 30vw;
     }
 }
