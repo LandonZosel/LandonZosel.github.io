@@ -1,5 +1,10 @@
 * {
     /* outline: 2px solid red; */
+    /* background-color: rgb(88, 39, 7); */
+}
+
+body {
+    background-color: rgb(88, 39, 7);
 }
 
 /* general site containers for header and footer spacing*/
