@@ -20,7 +20,7 @@ function setText(elementId, text) {
 
         document.querySelector(elementId).textContent = text;
 
-        console.log('Changed ' + elementId + 's text to: ' + text)
+        console.log('Changed ' + elementId + 's text to: ' + text);
     }
 }
 
@@ -42,7 +42,7 @@ function setBackgroundImage(elementId, imgUrl) {
 
         document.querySelector(elementId).style.setProperty('--hero-img', imgUrl);
 
-        console.log('Changed ' + elementId + 's image to: ' + imgUrl)
+        console.log('Changed ' + elementId + 's image to: ' + imgUrl);
     }
 }
 
@@ -66,7 +66,7 @@ async function init() {
 
     setCardsText('#sec2Grid', data.sections.equipment.cards);
 
-    setBackgroundImage('.hero', 'url(${data.hero.image})')
+    setBackgroundImage('.hero', 'url(' + data.hero.image + ')');
 }
 
 window.onload = init;
