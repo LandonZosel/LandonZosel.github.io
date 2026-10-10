@@ -9,6 +9,7 @@ async function getData() {
 
         const data = await response.json();
         console.log(data);
+        return data;
     } catch (error) {
         console.error(error.message);
     }
@@ -46,7 +47,7 @@ function setBackgroundImage(elementId, imgUrl) {
 }
 
 async function init() {
-    await getData()
+    var data = await getData()
     
     setText('title', data.title);
 
