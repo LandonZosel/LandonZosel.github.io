@@ -11,7 +11,7 @@ function setText(elementId, message) {
 
 async function init() {
     try {
-        const response = await fetch('/js/boardingData.json');
+        const response = await fetch('/5/js/boardingData.json');
         if (!response.ok) {
         throw new Error('Response status: ${response.status}');
         }
