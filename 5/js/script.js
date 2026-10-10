@@ -19,8 +19,6 @@ function setText(elementId, text) {
     if ((typeof elementId === 'string') && (typeof text === 'string')) {
 
         document.querySelector(elementId).textContent = text;
-
-        console.log('Changed ' + elementId + 's text to: ' + text);
     }
 }
 
@@ -41,13 +39,11 @@ function setBackgroundImage(elementId, imgUrl) {
     if ( (typeof elementId === 'string') && (typeof imgUrl === 'string') ) {
 
         document.querySelector(elementId).style.setProperty('--hero-img', imgUrl);
-
-        console.log('Changed ' + elementId + 's image to: ' + imgUrl);
     }
 }
 
-async function init() {
-    var data = await getData()
+async function updateWebsite() {
+    var data = await getData();
     
     setText('title', data.title);
 
@@ -67,6 +63,12 @@ async function init() {
     setCardsText('#sec2Grid', data.sections.equipment.cards);
 
     setBackgroundImage('.hero', 'url(' + data.hero.image + ')');
+}
+
+function init() {
+    var button = document.querySelector('#changeThemeBtn');
+
+    button.addEventListener('click', updateWebsite);
 }
 
 window.onload = init;
