@@ -22,6 +22,8 @@ function setText(elementId, text) {
     }
 }
 
+let currentChoice = "none";
+
 function setFigures(elementId, figureData) {
     if ((typeof elementId === 'string')) {
 
@@ -37,36 +39,39 @@ function setFigures(elementId, figureData) {
     }
 }
 
-async function firstChoiceSelected(position) {
+async function choiceSelected(position) {
     if (typeof position === 'string') {
         var data = await getData();
 
-        switch (position) {
-            case 'topLeft':
-                var page = data.choice-pages.idiophones;
-                setText('#title', page.title);
-                var choices = page.choices;
-                setFigures('#choices', choices);
-                break;
-            case 'topRight':
-                var page = data.choice-pages.membranophones;
-                setText('#title', page.title);
-                var choices = page.choices;
-                setFigures('#choices', choices);
-                break;
-            case 'botLeft':
-                var page = data.choice-pages.chordophones;
-                setText('#title', page.title);
-                var choices = page.choices;
-                setFigures('#choices', choices);
-                break;
-            case 'botRight':
-                var page = data.choice-pages.aerophones;
-                setText('#title', page.title);
-                var choices = page.choices;
-                setFigures('#choices', choices);
-                break;
+        if (currentChoice === "none") {
+            switch (position) {
+                case 'topLeft':
+                    var page = data.choicePages.idiophones;
+                    setText('#title', page.title);
+                    var choices = page.choices;
+                    setFigures('#choices', choices);
+                    break;
+                case 'topRight':
+                    var page = data.choicePages.membranophones;
+                    setText('#title', page.title);
+                    var choices = page.choices;
+                    setFigures('#choices', choices);
+                    break;
+                case 'botLeft':
+                    var page = data.choicePages.chordophones;
+                    setText('#title', page.title);
+                    var choices = page.choices;
+                    setFigures('#choices', choices);
+                    break;
+                case 'botRight':
+                    var page = data.choicePages.aerophones;
+                    setText('#title', page.title);
+                    var choices = page.choices;
+                    setFigures('#choices', choices);
+                    break;
+            }
         }
+        
     }
 }
 
@@ -76,10 +81,10 @@ function init() {
     var botLeftButton = document.querySelector('#botLeftButton');
     var botRightButton = document.querySelector('#botRightButton');
 
-    topLeftButton.addEventListener('click', firstChoiceSelected('topLeft'));
-    topRightButton.addEventListener('click', firstChoiceSelected('topRight'));
-    botLeftButton.addEventListener('click', firstChoiceSelected('botLeft'));
-    botRightButton.addEventListener('click', firstChoiceSelected('botRight'));
+    topLeftButton.addEventListener('click', choiceSelected('topLeft'));
+    topRightButton.addEventListener('click', choiceSelected('topRight'));
+    botLeftButton.addEventListener('click', choiceSelected('botLeft'));
+    botRightButton.addEventListener('click', choiceSelected('botRight'));
 }
 
 window.onload = init;

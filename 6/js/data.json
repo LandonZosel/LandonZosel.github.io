@@ -1,5 +1,5 @@
 {
-    "choice-pages": {
+    "choicePages": {
         "index": {
             "title": "Instruments",
             "choices": [
@@ -166,7 +166,7 @@
             ]
         }
     },
-    "instrument-pages": {
+    "instrumentPages": {
         "bells": {
             "title": "Bells",
             "text": {
