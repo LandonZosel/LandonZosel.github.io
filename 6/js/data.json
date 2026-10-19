@@ -1,0 +1,571 @@
+{
+    "choice-pages": {
+        "index": {
+            "title": "Instruments",
+            "choices": [
+                {
+                    "title": "Idiophones",
+                    "img": {
+                        "ref": "../img/idiophones.jpg",
+                        "alt-text": "A women hitting a bowl with a mallet"
+                    }
+                },
+                {
+                    "title": "Membranophones",
+                    "img": {
+                        "ref": "../img/membranophones.jpg",
+                        "alt-text": "A man beating a drum head"
+                    }
+                },
+                {
+                    "title": "Chordophones",
+                    "img": {
+                        "ref": "../img/chordophones.jpg",
+                        "alt-text": "A woman plucking a harp"
+                    }
+                },
+                {
+                    "title": "Aerophones",
+                    "img": {
+                        "ref": "../img/aerophones.jpg",
+                        "alt-text": "A man blowing into the open air"
+                    }
+                }
+            ]
+        },
+        "idiophones": {
+            "title": "Idiophones",
+            "choices": [
+                {
+                    "title": "Bells",
+                    "img": {
+                        "ref": "../img/bells.jpg",
+                        "alt-text": "A set of bells"
+                    }
+                },
+                {
+                    "title": "Cymbals",
+                    "img": {
+                        "ref": "../img/cymbals.jpg",
+                        "alt-text": "A set of cymbals"
+                    }
+                },
+                {
+                    "title": "Gongs",
+                    "img": {
+                        "ref": "../img/gongs.jpg",
+                        "alt-text": "A set of gongs"
+                    }
+                },
+                {
+                    "title": "Xylophone",
+                    "img": {
+                        "ref": "../img/xylophone.jpg",
+                        "alt-text": "A xylophone"
+                    }
+                }
+            ]
+        },
+        "membranophones": {
+            "title": "Membranophones",
+            "choices": [
+                {
+                    "title": "Bass Drum",
+                    "img": {
+                        "ref": "../img/bass-drum.jpg",
+                        "alt-text": "A bass drum"
+                    }
+                },
+                {
+                    "title": "Snare Drum",
+                    "img": {
+                        "ref": "../img/snare-drum.jpg",
+                        "alt-text": "A snare drum"
+                    }
+                },
+                {
+                    "title": "Tambourine",
+                    "img": {
+                        "ref": "../img/tambourine.jpg",
+                        "alt-text": "A tambourine"
+                    }
+                },
+                {
+                    "title": "Timpani",
+                    "img": {
+                        "ref": "../img/timpani.jpg",
+                        "alt-text": "A set of four timpani"
+                    }
+                }
+            ]
+        },
+        "chordophones": {
+            "title": "Chordophones",
+            "choices": [
+                {
+                    "title": "Double Bass",
+                    "img": {
+                        "ref": "../img/double-bass.jpg",
+                        "alt-text": "A double bass"
+                    }
+                },
+                {
+                    "title": "Harp",
+                    "img": {
+                        "ref": "../img/harp.jpg",
+                        "alt-text": "A harp"
+                    }
+                },
+                {
+                    "title": "Violin",
+                    "img": {
+                        "ref": "../img/violin.jpg",
+                        "alt-text": "A violin"
+                    }
+                },
+                {
+                    "title": "bot-right",
+                    "img": {
+                        "ref": "../img/flute.jpg",
+                        "alt-text": "A flute"
+                    }
+                }
+            ]
+        },
+        "aerophones": {
+            "title": "Aerophones",
+            "choices": [
+                {
+                    "title": "Flute",
+                    "img": {
+                        "ref": "../img/flute.jpg",
+                        "alt-text": "A flute"
+                    }
+                },
+                {
+                    "title": "French Horn",
+                    "img": {
+                        "ref": "../img/french-horn.jpg",
+                        "alt-text": "A french horn"
+                    }
+                },
+                {
+                    "title": "Oboe",
+                    "img": {
+                        "ref": "../img/oboe.jpg",
+                        "alt-text": "An oboe"
+                    }
+                },
+                {
+                    "title": "Trombone",
+                    "img": {
+                        "ref": "../img/trombone.jpg",
+                        "alt-text": "A trombone"
+                    }
+                }
+            ]
+        }
+    },
+    "instrument-pages": {
+        "bells": {
+            "title": "Bells",
+            "text": {
+                "definition": "Bells are classified as struck idiophones. They make sound by being hit by a mallet. The sound then vibrates off the body of the instrument. Some bell variants come with an internal clapper which acts as the mallet, allowing the instrument to be played simply by being shaken.",
+                "classical-app": "Bells are typically used in pieces to add a sharp vibrating sound. This can be very distinctive so they are usually used sparingly. They can also be used in order to mimic church bells. This can be symbolism of a celebration or something sacred.",
+                "img-caption": "Cowbells are used to track free roaming livestock because of their sharp sound.",
+                "piece-info": "Tchaikovsky's 1812 Overture is famous for ending with a wild cacophany of bells symbolizing the celebration in Moscow after Russia's defeat of Napolean and the French invasion in 1812.",
+                "piece-caption": "Tchaikovsky - 1812 Overture Finale",
+                "fun-fact": "The smaller the bell the more high pitched the sound will be (and vice-versa). This is why large bell towers use big bells as they not only carry further but also have a much lower tone."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/bells.jpg",
+                    "alt-text": "A set of bells"
+                },
+                "fun": {
+                    "ref": "../img/bells2.jpg",
+                    "alt-text": "Two bells attached to the front of an ox"
+                }
+            },
+            "audio": {
+                "sample": "../audio/bells.mp3",
+                "piece": "../audio/Tchaikovsky-1812-Overture.mp3"
+            }
+        },
+        "cymbals": {
+            "title": "Cymbals",
+            "text": {
+                "definition": "Cymbals are classified as struck idiophones. They make sound by either being hit by a stick or by another cymbal where sound then vibrates off the body of the instrument. Cymbals can be played by hand via a strap or connected to a stand to be played like more traditional percussion.",
+                "classical-app": "Cymbals can be used to create powerful notes that resonate, simple background beats, or even simple shimmering effects. This makes cymbals one of the most versatile percussion instruments as it has many applications.",
+                "img-caption": "The common three cymbals used as part of drum kits are known as the hi-hat, ride, and crash cymbal (although more advanced kits will have more specialized cymbals).",
+                "piece-info": "Tchaikovsky's Symphony No. 4 in F Minor ends with usage of the cymbals that was new for its time. The cymbal player starts and stops their cymbal at defined intervals to create unique effects.",
+                "piece-caption": "Tchaikovsky - Symphony No. 4 in F Minor",
+                "fun-fact": "The use of the suspended cymbal originated from jazz and popular music before becoming a prominent member of orchestras."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/cymbals.jpg",
+                    "alt-text": "A set of cymbals"
+                },
+                "fun": {
+                    "ref": "../img/cymbals2.jpg",
+                    "alt-text": "A drum set featuring many cymbals"
+                }
+            },
+            "audio": {
+                "sample": "../audio/cymbals.mp3",
+                "piece": "../audio/tchaikovsky-symphony-no4-f-minor.mp3"
+            }
+        },
+        "gongs": {
+            "title": "Gongs",
+            "text": {
+                "definition": "Gongs are classified as struck idiophones. They make sound by being hit with a mallet where sound then vibrates off the body of the instrument. Gongs are typically hung up and suspended with ropes to make longer and more impactful sounds.",
+                "classical-app": "Gongs allow for more diverse resonance in sound from other percussion. They serve as a way to allow for dramatic accents that complement other instruments' melody.",
+                "img-caption": "Gamelan is a traditional Indonesian orchestra set of tuned gongs and other drums. It is traditionally used in Wayang (shadow puppet theatre).",
+                "piece-info": "The song Tokyo Drift by the Teriyaki Boyz features a gamelan throughout the piece. It is most notable in the opening to the song.",
+                "piece-caption": "Tokyo Drift - Teriyaki Boyz",
+                "fun-fact": "Gongs were historically used for announcements in imperial China. They would be placed in the center of towns and used when a degree came from the government."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/gongs.jpg",
+                    "alt-text": "A set of gongs"
+                },
+                "fun": {
+                    "ref": "../img/gongs2.jpg",
+                    "alt-text": "Multiple Indonesian men sitting on a carpet around a set of small tuned gongs performing"
+                }
+            },
+            "audio": {
+                "sample": "../audio/gongs.mp3",
+                "piece": "../audio/Tokyo-Drift.mp3"
+            }
+        },
+        "xylophone": {
+            "title": "Xylophone",
+            "text": {
+                "definition": "Xylophones are classified as definite-pitch idiophones. They make sound by being hit with a mallet (or mallets) on a key where a defined pitch sound then vibrates off the body of the specific key. Xylophones covers around 4 octaves of notes, meaning a full xylophone has 48 distinct keys.",
+                "classical-app": "The xylophone acts as a percussion instrument with a fully defined range of notes. This allows it to act as a common counter melody to the main melody, if it is not playing the main melody itself. This means xylophones act as a centerpiece of percussion focused pieces.",
+                "img-caption": "Note how a player can use two mallets in one hand allowing for four mallets at once!",
+                "piece-info": "Percussion instruments, in general, are notable for being featured as ringtones. Their sharp tone and nature lends well to the nature of the task, audibly informing the user of something. This is a relatively well known Apple ringtone featuring the xylophone.",
+                "piece-caption": "Apple Xylophone Ringtone",
+                "fun-fact": "People often get marimbas and xylophones mixed up as they are both key based percussion. The difference is the pitch focus of each instrument. Marimbas has a much lower range compared to the xylophone which covers a much higher range. They are simply tonally different."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/xylophone.jpg",
+                    "alt-text": "A xylophone"
+                },
+                "fun": {
+                    "ref": "../img/xylophone2.jpg",
+                    "alt-text": "A person holding two mallets in each hand playing the xylophone"
+                }
+            },
+            "audio": {
+                "sample": "../audio/xylophone.mp3",
+                "piece": "../audio/xylophone-ringtone.mp3"
+            }
+        },
+        "bass-drum": {
+            "title": "Bass Drum",
+            "text": {
+                "definition": "Bass drums are classified as struck membranophones. They make sound by being hit by a mallet where sound then vibrates off the membrane (skin) of the drum. Bass drums produce a very low sound when struck. They can be found on their own or attached to a drum kit.",
+                "classical-app": "Bass drums create low deep notes that work well for either a consistent beat or a compliment to the melody. It can also be used to create low rolls that lead up to a melody. They add an extra layer and make a fuller ensemble.",
+                "img-caption": "Bass drums have a hole in the back to allow air to escape quickly (creating a more punchy sound) and for mic placement.",
+                "piece-info": "Led Zeppelin's Good Times Bad Times has a prominent bass drum part with an intricate rhythm that compliments main melody. It is most notable inbetween lyrics.",
+                "piece-caption": "Led Zeppelin - Good Times Bad Times",
+                "fun-fact": "Bass drums were originally made in order to have better time keeping. However, their role has since expanded to include mimicking sound effects such as gunshots and explosions."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/bass-drum.jpg",
+                    "alt-text": "A bass drum"
+                },
+                "fun": {
+                    "ref": "../img/bass-drum2.jpg",
+                    "alt-text": "A bass drum with a hole showing out of the back"
+                }
+            },
+            "audio": {
+                "sample": "../audio/bass-drum.mp3",
+                "piece": "../audio/Good-Times-Bad-Times.mp3"
+            }
+        },
+        "snare-drum": {
+            "title": "Snare Drum",
+            "text": {
+                "definition": "Snare drums are classified as struck membranophones. They make sound by being hit by a stick where sound then vibrates off the snare wires that are attached to the bottom membrane. The addition of the snare wires (simply metal wires strung under the instrument) give snares a very unique sound that is distinct from other percussion instruments.",
+                "classical-app": "Snare drums typically take the role of accenting and dramatization for the purpose of orchestra. They can add suspense with its unique soundscape and lead into other instruments well. A well placed snare can have the effect of making a piece seem more militaristic and structured. Snares can have solos and main melodies, although this is more common in traditional bands and marching bands.",
+                "img-caption": "The snare drum is a key part of most marching bands. They help keep the tempo that band marches to.",
+                "piece-info": "Whiplash is a movie about drumming and taking things to the extreme. It follows a very emotional story that ends with a fantastic drum solo. This is a part of that solo that focuses on the snare drum and uses it to set up tension and anticipation.",
+                "piece-caption": "Whiplash - Caravan",
+                "fun-fact": "Snare drums evolved from an instrument known as a Tabor. This instrument was key in militaristic operations as it was used to communicate and send signals across battlefields."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/snare-drum.jpg",
+                    "alt-text": "A snare drum"
+                },
+                "fun": {
+                    "ref": "../img/snare-drum2.jpg",
+                    "alt-text": "A group of kids in blue outfits with snare drums marching in a parade"
+                }
+            },
+            "audio": {
+                "sample": "../audio/snare-drum.mp3",
+                "piece": "../audio/Whiplash.mp3"
+            }
+        },
+        "tambourine": {
+            "title": "Tambourine",
+            "text": {
+                "definition": "Tambourines are classified as struck membranophones and indirectly struck idiophones. When being played as a membranophone, they make sound by being hit by a hand where sound then vibrates off the membrane and the jingles. When being played as an idiophone, they make sound by being shaken where sound then vibrates off the jingles. Tambourines are typically held and played by hand.",
+                "classical-app": "Tambourines are used to add bright rhythmic accents to a piece. They are similar to the triangle and bells in this way, however they also have their membrane which, combined with the jingles, makes a more unique sound for the purposes of orchestra.",
+                "img-caption": "Some tambourines have styling when played for ceremonial events (like with the ribbon on this one).",
+                "piece-info": "The famous opera Carmen uses the tambourine in Habanera to accent in between the main singer's solo. The tambourine gives the supporting chorus more of a pop in the few moments they have.",
+                "piece-caption": "Carmen - Habanera",
+                "fun-fact": "Tambourines can come headless (without a membrane). These are simply shaken to be played through the jingles."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/tambourine.jpg",
+                    "alt-text": "A tambourine"
+                },
+                "fun": {
+                    "ref": "../img/tambourine2.jpg",
+                    "alt-text": "A tambourine being held up with a red and yellow ribbon attached"
+                }
+            },
+            "audio": {
+                "sample": "../audio/tambourine.mp3",
+                "piece": "../audio/Tchaikovsky-1812-Overture.mp3"
+            }
+        },
+        "timpani": {
+            "title": "Timpani",
+            "text": {
+                "definition": "Timpani are classified as struck membranophones. They make sound by being hit by a mallet where sound then vibrates off the membrane and bowl of the instrument. Timpani typically come in a set of 4 and each produce a very low booming sound.",
+                "classical-app": "Timpani have a very distinct booming sound that distinguishes them from other low pitched percussion instruments (like the bass drum). This leads to them playing a similar role in having a constant beat for the orchestra. They also have multiple pitches and can be used to define and drive the melody.",
+                "img-caption": "The musician stands in between four timpani.",
+                "piece-info": "Also sprach Zarathustra is a famous piece for its use in 2001: A Space Odyssey and for its use of timpani. In between each major instrumental section, the timpani plays a bombastic rhythm of notes that leads into the next section.",
+                "piece-caption": "Richard Strauss - Also sprach Zarathustra",
+                "fun-fact": "The bowl of the timpani is made out of a sheet of copper. This copper is actually what gives the timpani its unique resonant sound."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/timpani.jpg",
+                    "alt-text": "A set of four timpani"
+                },
+                "fun": {
+                    "ref": "../img/timpani2.jpg",
+                    "alt-text": "A man playing in the middle of four timpani"
+                }
+            },
+            "audio": {
+                "sample": "../audio/timpani.mp3",
+                "piece": "../audio/Also-sprach-Zarathustra.mp3"
+            }
+        },
+        "double-bass": {
+            "title": "Double Bass",
+            "text": {
+                "definition": "Double basses are classified as composite chordophones. They make sound by using a bowed string against strung strings which vibrate through the hollow body of the instrument. The double bass is played while standing due to the size of the instrument.",
+                "classical-app": "The double bass serves as a low tone and rhythmic source to the orchestra. It mostly adds rich tones to the overall harmonies of the orchestra. The way it can be plucked and bowed allows for a rhythmic pulse that guides the rest of the orchestra in the piece.",
+                "img-caption": "The double bass can be plucked (like a harp!) instead of bowed.",
+                "piece-info": "The Pink Panther theme uses the double bass to make a foundational cadence for the song. The resonance from the notes help carry the tune and create areas of space without melody but with sound.",
+                "piece-caption": "Henry Mancini - The Pink Panther Theme",
+                "fun-fact": "Despite being a string instrument that is mostly known for orchestra, the double bass is widely used in many types of ensembles. Jazz bands and concert bands regularly employ double bass as a way of reaching very low notes and providing an anchor for the band."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/double-bass.jpg",
+                    "alt-text": "A double bass"
+                },
+                "fun": {
+                    "ref": "../img/double-bass2.jpg",
+                    "alt-text": "A person plucking a double bass"
+                }
+            },
+            "audio": {
+                "sample": "../audio/double-bass.mp3",
+                "piece": "../audio/Pink-Panther.mp3"
+            }
+        },
+        "harp": {
+            "title": "Harp",
+            "text": {
+                "definition": "Harps are classified as composite chordophones. They make sound by plucking strings where sound then vibrates off. A harp player holds the harp closely by leaning it along their shoulder.",
+                "classical-app": "The harp adds more harmonic and melodic support to the orchestra. They are also used to provide shimmering and colorful accents to pieces. Glissandos (a flowing continuous pitch) are quite common to be played on the harp in a piece.",
+                "img-caption": "A harp player never uses their pinky (it is too short).",
+                "piece-info": "Lana Del Rey's song Video Games prominenetly features the harp. It acts as an accent to the end of lyrical beats and conveys a melancholic/romantic tone. It is most notable at the beginning of the piece as is here.",
+                "piece-caption": "Lana Del Rey - Video Games",
+                "fun-fact": "The harp is believed to be one of the oldest instruments in the world, dating back to ancient Egypt."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/harp.jpg",
+                    "alt-text": "A harp"
+                },
+                "fun": {
+                    "ref": "../img/harp2.jpg",
+                    "alt-text": "A woman playing a harp"
+                }
+            },
+            "audio": {
+                "sample": "../audio/harp.mp3",
+                "piece": "../audio/Video-Games.mp3"
+            }
+        },
+        "piano": {
+            "title": "Piano",
+            "text": {
+                "definition": "Pianos are classified as simple chordophones. They make sound by pressing keys where a hammer strikes a string that vibrates to make sound. The piano is unique in that it requires a percussion-esque action to create sound yet the sound is created by an acoustic based system.",
+                "classical-app": "The piano is a very relevant classical instrument. It served as its own solo piece for famous multi-movement concertos. In orchestra, the piano mostly takes a comparatively minor role as a background instrument, establishing the chords for the piece and occasionally participating in melody and counter-melody.",
+                "img-caption": "The white keys are whole tones (C, E, D) while the black keys are semitones (C#, Eb, D#).",
+                "piece-info": "Clair de lune is a piece from Claude Debussy's Suite bergamasque. It is one of the most famous piano piece of all time.",
+                "piece-caption": "Claude Debussy - Clair de lune",
+                "fun-fact": "The piano has the widest range of tones of any instrument. It can play from A0 to C8 (for context, the clarinet has a range of E3 to C7, so about double the range of a clarinet)."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/piano.jpg",
+                    "alt-text": "A piano"
+                },
+                "fun": {
+                    "ref": "../img/piano2.jpg",
+                    "alt-text": "A person playing a piano"
+                }
+            },
+            "audio": {
+                "sample": "../audio/piano.mp3",
+                "piece": "../audio/Clair-de-lune.mp3"
+            }
+        },
+        "violin": {
+            "title": "Violin",
+            "text": {
+                "definition": "Violins are classified as composite chordophones. They make sound by using a bowed string against strung strings which vibrate through the hollow body of the instrument. The violin is played by putting the base of the instrument on your shoulder (holding the other end with your hand) and moving the bow across.",
+                "classical-app": "The violin provides an expressive range that leads the orchestra. Over time, there has been less reliance on the violin and melodies have been spread out. However, there used to be a time when the violin was the melody and heart of every orchestra. Today, it still plays a foundation part in establishing chords and giving the orchestra its distinct sound.",
+                "img-caption": "The violin has only four strings. A double stop is when a violinist plays two strings at the same time.",
+                "piece-info": "Vivaldi's The Four Seasons is a set of violin concertos. Among them are many classic tunes that have become world renowned. One of the most well known is Winter I. The violins here builds up suspense in quick pluckings ending with a brilliant violin solo.",
+                "piece-caption": "Antonio Vivaldi - The Four Seasons: Winter I. Allegro non molto",
+                "fun-fact": "Due to the motion required to play the instrument, a violinist burns around 170 calories per hour while playing."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/violin.jpg",
+                    "alt-text": "A violin"
+                },
+                "fun": {
+                    "ref": "../img/violin2.jpg",
+                    "alt-text": "A person holding a violin to their shoulder and bowing it"
+                }
+            },
+            "audio": {
+                "sample": "../audio/violin.mp3",
+                "piece": "../audio/WinterTheFourSeasons.mp3"
+            }
+        },
+        "flute": {
+            "title": "Flute",
+            "text": {
+                "definition": "Flutes are classified as edge blown aerophones. They make sound by blowing air across the mouthpiece hole, causing the air inside the tube to vibrate. The pitch of the note is determined by keys pressed down which opens and closes holes along the body of the instrument.",
+                "classical-app": "Flutes are very expressive with their vocal and bright sound. They blend well with many instruments and typically sustain the melody of the piece. Typically, flutes are used to create a feeling of whimsy, magic, and love.",
+                "img-caption": "Note how the flute has to be held to the right in order for the air to flow correctly.",
+                "piece-info": "My Heart Will Go On from Titanic is a piece that symbolizes the meaning of star-crossed lovers. The piece opens with a flute solo that is both saddening, heartfelt, longing. Considering the viewer already knows how the story will end, it makes the somber attitude that much greater.",
+                "piece-caption": "Titanic - My Heart Will Go On",
+                "fun-fact": "Due to the nature of flutes, they have been made out of many materials. To note some of the distinctive examples, there are flutes made of bone, ivory, glass, jade, and even gold."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/flute.jpg",
+                    "alt-text": "A flute"
+                },
+                "fun": {
+                    "ref": "../img/flute2.jpg",
+                    "alt-text": "A woman playing a flute, holding it sideways"
+                }
+            },
+            "audio": {
+                "sample": "../audio/flute.mp3",
+                "piece": "../audio/My-Heart-Will-Go-On.mp3"
+            }
+        },
+        "french-horn": {
+            "title": "French Horn",
+            "text": {
+                "definition": "French horns are classified as lip-vibrated aerophones. They make sound by vibrating lips and pushing air through a mouthpiece which then travels through the instrument. The length of the instrument determines the pitch of the note. French horn players manipulate this using valves which redirect the airflow through more or less tubing, resulting in lower or higher pitched notes.",
+                "classical-app": "The french horn is very commonly used for playing melodic lines and solos. It has powerful tones that carry far and create rich bodied chords. The range of the instrument allows it to create harmonic filling, bridging the gap between low and high end melody.",
+                "img-caption": "The horn player uses their other hand to hold the inside of the horn.",
+                "piece-info": "John Williams is a fan of using the french horn. From Star Wars to Harry Potter, he has fully utilized the vast nature of the horn. I want to highlight its use in the opening of the Jurassic Park theme song. The lonesome solo feel uplifting and wondorous leading into the full orchestra.",
+                "piece-caption": "John Williams - Jurassic Park Theme Song",
+                "fun-fact": "If you were to uncoil a french horn and lay it out straight, it would be around 13 feet long."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/french-horn.jpg",
+                    "alt-text": "A french horn"
+                },
+                "fun": {
+                    "ref": "../img/french-horn2.jpg",
+                    "alt-text": "A person holding and playing a french horn"
+                }
+            },
+            "audio": {
+                "sample": "../audio/french-horn.mp3",
+                "piece": "../audio/Jurassic-Park.mp3"
+            }
+        },
+        "oboe": {
+            "title": "Oboe",
+            "text": {
+                "definition": "Oboes are classified as double-reeded aerophones. They make sound by blowing air through a double reed, vibrating the two reeds that are pressed together and causing the sound waves to be sent down the horn. The pitch of the note is determined by keys pressed down which opens and closes holes along the body of the instrument.",
+                "classical-app": "The oboe has a very distinctive and piercing double reed sound that is known for its singing-like, wistful tone. This leads to the oboe being melodic and typically a solo instrument. Due to its sound, it is typically applied for sad and poignant moments in pieces.",
+                "img-caption": "An oboist has to curl their mouth inwards in order to vibrate the reed.",
+                "piece-info": "Happy Together is a fairly popular pop song by The Turtles. It features many woodwinds and percussion to create its peppy soundscape. One of the more unique instruments it employees is the oboe as a counter-melody to the main lyrical melody of this section.",
+                "piece-caption": "The Turtles - Happy Together",
+                "fun-fact": "Due to the high price of double reeds, professional oboists typically learn how to make their own. The process involves taking blades of cut cane, soaking them, shaping them using reed carving tools, and tying them to cork pieces. This also allows them to fine tune the reed to their needs."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/oboe.jpg",
+                    "alt-text": "An oboe"
+                },
+                "fun": {
+                    "ref": "../img/oboe2.jpg",
+                    "alt-text": "A man playing an oboe with his mouth curled inwards"
+                }
+            },
+            "audio": {
+                "sample": "../audio/oboe.mp3",
+                "piece": "../audio/Happy-Together.mp3"
+            }
+        },
+        "trombone": {
+            "title": "Trombone",
+            "text": {
+                "definition": "Trombones are classified as lip-vibrated aerophones. They make sound by vibrating lips and pushing air through a mouthpiece which then travels through the instrument. The length of the instrument determines the pitch of the note. Trombonists manipulate this by pushing and pulling their slide, physically making the air travel further to achieve lower notes and vice versa.",
+                "classical-app": "The trombone originated in religious and sacred music. Its tone resonated with a deep solemn voice that fit well with choirs. Over time, this position evolved to allow it to fit well into an orchestra ensemble as a powerful melodic brass voice. They add dramatic power to a piece.",
+                "img-caption": "One hand is holding the trombone close to the face, the other pushes/pulls the slide.",
+                "piece-info": "Holst's The Planets is a famous orchestra suite. Mars, the Bringer Of War is a relentless, pounding, and aggressive tune with a marching melody. The trombone segment featured here shows how expressive and powerful its voice can be when used correctly.",
+                "piece-caption": "Gustav Holst - The Planets: Mars",
+                "fun-fact": "The trombone has often also been used for funeral music, due to its religious background. When Beethoven died, four trombonists led the procession for his funeral."
+            },
+            "imgs": {
+                "normal": {
+                    "ref": "../img/trombone.jpg",
+                    "alt-text": "A trombone"
+                },
+                "fun": {
+                    "ref": "../img/trombone2.jpg",
+                    "alt-text": "A group of musicians playing the trombone, holding the instrument close to their face with their other hand on the slide"
+                }
+            },
+            "audio": {
+                "sample": "../audio/trombone.mp3",
+                "piece": "../audio/Mars.mp3"
+            }
+        }
+    }
+}
