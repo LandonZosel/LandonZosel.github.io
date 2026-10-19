@@ -1,5 +1,6 @@
 'use strict';
 
+//retrives data from JSON
 async function getData() {
     try {
         const response = await fetch('/6/js/data.json');
@@ -8,13 +9,13 @@ async function getData() {
         }
 
         const data = await response.json();
-        console.log(data);
         return data;
     } catch (error) {
         console.error(error.message);
     }
 }
 
+//sets the text of a query using elementId to text
 function setText(elementId, text) {
     if ((typeof elementId === 'string') && (typeof text === 'string')) {
 
@@ -22,6 +23,7 @@ function setText(elementId, text) {
     }
 }
 
+//sets an image of a query using elementId to a src and its alt text
 function setImage(elementId, src, alt) {
     if ((typeof elementId === 'string') && (typeof src === 'string') && (typeof alt === 'string')) {
 
@@ -31,6 +33,7 @@ function setImage(elementId, src, alt) {
     }
 }
 
+//sets an audio's src of a query using elementId
 function setAudio(elementId, src) {
     if ((typeof elementId === 'string') && (typeof src === 'string')) {
 
@@ -40,6 +43,7 @@ function setAudio(elementId, src) {
 
 let currentChoice = "none";
 
+//sets the choices from the first choice to the second
 function setFigures(elementId, figureData) {
     if ((typeof elementId === 'string')) {
 
@@ -55,6 +59,7 @@ function setFigures(elementId, figureData) {
     }
 }
 
+//sets the info for the final page
 function setInfoFields(data) {
     //set title
     setText('h1', data.title);
@@ -79,46 +84,59 @@ function setInfoFields(data) {
     setAudio('#piece', audio.piece);
 }
 
+//hides figures after final choice made
 function hideFigures() {
     document.querySelector('#choices').hidden = true;
 }
 
+//reveals info after final choice made
 function revealInfo() {
     document.querySelector('#info').hidden = false;
 }
 
+//called when a button is pressed and passes in the position of that button to determine what to display
+//uses 'currentChoice' to decide if it is a first choice press or second
 async function choiceSelected(position) {
     if (typeof position === 'string') {
         var data = await getData();
 
         if (currentChoice === "none") {
+            //must be first choice
             switch (position) {
                 case 'topLeft':
                     currentChoice = "idiophones";
                     var page = data.choicePages.idiophones;
+                    //set title
                     setText('h1', page.title);
                     var choices = page.choices;
+                    //set choices
                     setFigures('#choices', choices);
                     break;
                 case 'topRight':
                     currentChoice = "membranophones";
                     var page = data.choicePages.membranophones;
+                    //set title
                     setText('h1', page.title);
                     var choices = page.choices;
+                    //set choices
                     setFigures('#choices', choices);
                     break;
                 case 'botLeft':
                     currentChoice = "chordophones";
                     var page = data.choicePages.chordophones;
+                    //set title
                     setText('h1', page.title);
                     var choices = page.choices;
+                    //set choices
                     setFigures('#choices', choices);
                     break;
                 case 'botRight':
                     currentChoice = "aerophones";
                     var page = data.choicePages.aerophones;
+                    //set title
                     setText('h1', page.title);
                     var choices = page.choices;
+                    //set choices
                     setFigures('#choices', choices);
                     break;
             }
@@ -234,12 +252,15 @@ async function choiceSelected(position) {
     }
 }
 
+//sets buttons to function
 function init() {
+    //get buttons
     var topLeftButton = document.querySelector('#topLeftButton');
     var topRightButton = document.querySelector('#topRightButton');
     var botLeftButton = document.querySelector('#botLeftButton');
     var botRightButton = document.querySelector('#botRightButton');
 
+    //set event listeners to choiceSelected function
     topLeftButton.addEventListener('click', () => choiceSelected('topLeft'));
     topRightButton.addEventListener('click', () => choiceSelected('topRight'));
     botLeftButton.addEventListener('click', () => choiceSelected('botLeft'));
