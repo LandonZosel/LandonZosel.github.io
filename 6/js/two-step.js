@@ -40,7 +40,11 @@ function setFigures(elementId, figureData) {
 }
 
 function hideFigures() {
+    document.querySelector('#choices').hidden = true;
+}
 
+function revealInfo() {
+    document.querySelector('#info').hidden = false;
 }
 
 async function choiceSelected(position) {
@@ -114,10 +118,10 @@ function init() {
     var botLeftButton = document.querySelector('#botLeftButton');
     var botRightButton = document.querySelector('#botRightButton');
 
-    topLeftButton.addEventListener('click', choiceSelected('topLeft'));
-    topRightButton.addEventListener('click', choiceSelected('topRight'));
-    botLeftButton.addEventListener('click', choiceSelected('botLeft'));
-    botRightButton.addEventListener('click', choiceSelected('botRight'));
+    topLeftButton.addEventListener('click', () => choiceSelected('topLeft'));
+    topRightButton.addEventListener('click', () => choiceSelected('topRight'));
+    botLeftButton.addEventListener('click', () => choiceSelected('botLeft'));
+    botRightButton.addEventListener('click', () => choiceSelected('botRight'));
 }
 
 window.onload = init;
