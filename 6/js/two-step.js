@@ -33,7 +33,7 @@ function setFigures(elementId, figureData) {
         figures.forEach((figure, id) => {
             var img = figure.querySelector('img');
             img.src = figureData[id].img.ref;
-            img.alt = figureData[id].img.alt-text;
+            img.alt = figureData[id].img.alt;
             figure.querySelector('h2').textContent = cardsData[id].title;
         });
     }
@@ -46,30 +46,60 @@ async function choiceSelected(position) {
         if (currentChoice === "none") {
             switch (position) {
                 case 'topLeft':
+                    currentChoice = "idiophones";
                     var page = data.choicePages.idiophones;
                     setText('#title', page.title);
                     var choices = page.choices;
                     setFigures('#choices', choices);
                     break;
                 case 'topRight':
+                    currentChoice = "membranophones";
                     var page = data.choicePages.membranophones;
                     setText('#title', page.title);
                     var choices = page.choices;
                     setFigures('#choices', choices);
                     break;
                 case 'botLeft':
+                    currentChoice = "chordophones";
                     var page = data.choicePages.chordophones;
                     setText('#title', page.title);
                     var choices = page.choices;
                     setFigures('#choices', choices);
                     break;
                 case 'botRight':
+                    currentChoice = "aerophones";
                     var page = data.choicePages.aerophones;
                     setText('#title', page.title);
                     var choices = page.choices;
                     setFigures('#choices', choices);
                     break;
             }
+        } else if (currentChoice === "idiophones") {
+            switch (position) {
+                case 'topLeft':
+                    //hide all the figures
+
+                    //update the info fields
+
+                    //make info fields visible
+
+                    break;
+                case 'topRight':
+                    
+                    break;
+                case 'botLeft':
+                    
+                    break;
+                case 'botRight':
+                    
+                    break;
+            }
+        } else if (currentChoice === "membranophones") {
+            
+        } else if (currentChoice === "chordophones") {
+
+        } else if (currentChoice === "aerophones") {
+
         }
         
     }
