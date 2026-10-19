@@ -22,6 +22,22 @@ function setText(elementId, text) {
     }
 }
 
+function setImage(elementId, src, alt) {
+    if ((typeof elementId === 'string') && (typeof src === 'string') && (typeof alt === 'string')) {
+
+        var img = document.querySelector(elementId);
+        img.src = src;
+        img.alt = alt;
+    }
+}
+
+function setAudio(elementId, src) {
+    if ((typeof elementId === 'string') && (typeof src === 'string')) {
+
+        document.querySelector(elementId).src = src;
+    }
+}
+
 let currentChoice = "none";
 
 function setFigures(elementId, figureData) {
@@ -37,6 +53,30 @@ function setFigures(elementId, figureData) {
             figure.querySelector('h2').textContent = figureData[id].title;
         });
     }
+}
+
+function setInfoFields(data) {
+    //set title
+    setText('h1', data.title);
+
+    //set text
+    var text = data.text;
+    setText('#definition', text.definition);
+    setText('#classical', text.classical);
+    setText('#imgCaption', text.imgCaption);
+    setText('#pieceInfo', text.pieceInfo);
+    setText('#pieceCaption', text.pieceCaption);
+    setText('#funFact', text.funFact);
+
+    //set images
+    var imgs = data.imgs;
+    setImage('#normal', imgs.normal.ref, imgs.normal.alt);
+    setImage('#fun', imgs.fun.ref, imgs.fun.alt);
+
+    //set audio
+    var audio = data.audio;
+    setAudio('#sample', audio.sample);
+    setAudio('#piece', audio.piece);
 }
 
 function hideFigures() {
@@ -56,39 +96,40 @@ async function choiceSelected(position) {
                 case 'topLeft':
                     currentChoice = "idiophones";
                     var page = data.choicePages.idiophones;
-                    setText('#title', page.title);
+                    setText('h1', page.title);
                     var choices = page.choices;
                     setFigures('#choices', choices);
                     break;
                 case 'topRight':
                     currentChoice = "membranophones";
                     var page = data.choicePages.membranophones;
-                    setText('#title', page.title);
+                    setText('h1', page.title);
                     var choices = page.choices;
                     setFigures('#choices', choices);
                     break;
                 case 'botLeft':
                     currentChoice = "chordophones";
                     var page = data.choicePages.chordophones;
-                    setText('#title', page.title);
+                    setText('h1', page.title);
                     var choices = page.choices;
                     setFigures('#choices', choices);
                     break;
                 case 'botRight':
                     currentChoice = "aerophones";
                     var page = data.choicePages.aerophones;
-                    setText('#title', page.title);
+                    setText('h1', page.title);
                     var choices = page.choices;
                     setFigures('#choices', choices);
                     break;
             }
         } else if (currentChoice === "idiophones") {
             //hide figures
-
+            hideFigures();
             switch (position) {
                 case 'topLeft':
                     //update the info fields
-
+                    var instrumentData = data.instrumentPages.bells;
+                    setInfoFields(instrumentData);
                     break;
                 case 'topRight':
                     
@@ -101,6 +142,7 @@ async function choiceSelected(position) {
                     break;
             }
             //make info fields visible
+            revealInfo();
         } else if (currentChoice === "membranophones") {
             
         } else if (currentChoice === "chordophones") {
