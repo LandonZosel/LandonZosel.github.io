@@ -178,6 +178,14 @@ figcaption {
     margin: 0.25em;
 }
 
+/* button */
+.imageButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 /* ipad rules */
 @media (min-width: 650px) {
     nav {
