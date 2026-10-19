@@ -117,17 +117,17 @@
                     }
                 },
                 {
+                    "title": "Piano",
+                    "img": {
+                        "ref": "../img/piano.jpg",
+                        "alt": "A piano"
+                    }
+                },
+                {
                     "title": "Violin",
                     "img": {
                         "ref": "../img/violin.jpg",
                         "alt": "A violin"
-                    }
-                },
-                {
-                    "title": "bot-right",
-                    "img": {
-                        "ref": "../img/flute.jpg",
-                        "alt": "A flute"
                     }
                 }
             ]
