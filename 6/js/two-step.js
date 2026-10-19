@@ -34,9 +34,13 @@ function setFigures(elementId, figureData) {
             var img = figure.querySelector('img');
             img.src = figureData[id].img.ref;
             img.alt = figureData[id].img.alt;
-            figure.querySelector('h2').textContent = cardsData[id].title;
+            figure.querySelector('h2').textContent = figureData[id].title;
         });
     }
+}
+
+function hideFigures() {
+
 }
 
 async function choiceSelected(position) {
@@ -75,13 +79,11 @@ async function choiceSelected(position) {
                     break;
             }
         } else if (currentChoice === "idiophones") {
+            //hide figures
+
             switch (position) {
                 case 'topLeft':
-                    //hide all the figures
-
                     //update the info fields
-
-                    //make info fields visible
 
                     break;
                 case 'topRight':
@@ -94,6 +96,7 @@ async function choiceSelected(position) {
                     
                     break;
             }
+            //make info fields visible
         } else if (currentChoice === "membranophones") {
             
         } else if (currentChoice === "chordophones") {
