@@ -267,7 +267,7 @@
                 "piece": "../audio/xylophone-ringtone.mp3"
             }
         },
-        "bass-drum": {
+        "bassDrum": {
             "title": "Bass Drum",
             "text": {
                 "definition": "Bass drums are classified as struck membranophones. They make sound by being hit by a mallet where sound then vibrates off the membrane (skin) of the drum. Bass drums produce a very low sound when struck. They can be found on their own or attached to a drum kit.",
@@ -292,7 +292,7 @@
                 "piece": "../audio/Good-Times-Bad-Times.mp3"
             }
         },
-        "snare-drum": {
+        "snareDrum": {
             "title": "Snare Drum",
             "text": {
                 "definition": "Snare drums are classified as struck membranophones. They make sound by being hit by a stick where sound then vibrates off the snare wires that are attached to the bottom membrane. The addition of the snare wires (simply metal wires strung under the instrument) give snares a very unique sound that is distinct from other percussion instruments.",
@@ -367,7 +367,7 @@
                 "piece": "../audio/Also-sprach-Zarathustra.mp3"
             }
         },
-        "double-bass": {
+        "doubleBass": {
             "title": "Double Bass",
             "text": {
                 "definition": "Double basses are classified as composite chordophones. They make sound by using a bowed string against strung strings which vibrate through the hollow body of the instrument. The double bass is played while standing due to the size of the instrument.",
@@ -492,7 +492,7 @@
                 "piece": "../audio/My-Heart-Will-Go-On.mp3"
             }
         },
-        "french-horn": {
+        "frenchHorn": {
             "title": "French Horn",
             "text": {
                 "definition": "French horns are classified as lip-vibrated aerophones. They make sound by vibrating lips and pushing air through a mouthpiece which then travels through the instrument. The length of the instrument determines the pitch of the note. French horn players manipulate this using valves which redirect the airflow through more or less tubing, resulting in lower or higher pitched notes.",

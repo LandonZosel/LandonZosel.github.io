@@ -132,25 +132,105 @@ async function choiceSelected(position) {
                     setInfoFields(instrumentData);
                     break;
                 case 'topRight':
-                    
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.cymbals;
+                    setInfoFields(instrumentData);
                     break;
                 case 'botLeft':
-                    
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.gongs;
+                    setInfoFields(instrumentData);
                     break;
                 case 'botRight':
-                    
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.xylophone;
+                    setInfoFields(instrumentData);
                     break;
             }
             //make info fields visible
             revealInfo();
         } else if (currentChoice === "membranophones") {
-            
+            //hide figures
+            hideFigures();
+            switch (position) {
+                case 'topLeft':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.bassDrum;
+                    setInfoFields(instrumentData);
+                    break;
+                case 'topRight':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.snareDrum;
+                    setInfoFields(instrumentData);
+                    break;
+                case 'botLeft':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.tambourine;
+                    setInfoFields(instrumentData);
+                    break;
+                case 'botRight':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.timpani;
+                    setInfoFields(instrumentData);
+                    break;
+            }
+            //make info fields visible
+            revealInfo();
         } else if (currentChoice === "chordophones") {
-
+            //hide figures
+            hideFigures();
+            switch (position) {
+                case 'topLeft':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.doubleBass;
+                    setInfoFields(instrumentData);
+                    break;
+                case 'topRight':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.harp;
+                    setInfoFields(instrumentData);
+                    break;
+                case 'botLeft':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.piano;
+                    setInfoFields(instrumentData);
+                    break;
+                case 'botRight':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.violin;
+                    setInfoFields(instrumentData);
+                    break;
+            }
+            //make info fields visible
+            revealInfo();
         } else if (currentChoice === "aerophones") {
-
+            //hide figures
+            hideFigures();
+            switch (position) {
+                case 'topLeft':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.flute;
+                    setInfoFields(instrumentData);
+                    break;
+                case 'topRight':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.frenchHorn;
+                    setInfoFields(instrumentData);
+                    break;
+                case 'botLeft':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.oboe;
+                    setInfoFields(instrumentData);
+                    break;
+                case 'botRight':
+                    //update the info fields
+                    var instrumentData = data.instrumentPages.trombone;
+                    setInfoFields(instrumentData);
+                    break;
+            }
+            //make info fields visible
+            revealInfo();
         }
-        
     }
 }
 
