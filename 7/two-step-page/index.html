@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Landon Zosel">
+    <meta name="description" content="A website detailing information about the orchestra">
+    <meta name="keywords" content="Landon,Zosel,Music,Orchestra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Orchestra</title>
+    <link rel="icon" href="../img/music.ico">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="siteContainer">
+        <header>
+            <p class="headerTitle">The Orchestra</p>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Instruments</a></li>
+                    <li><a href="../static-page/index.html">Music Theory</a></li>
+                    <li><a href="../contact-us-page/index.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainContainer">
+            <div class="pageTitleContainer">
+                <h1>Instruments</h1>
+            </div>
+            <div id="choices">
+                <div class="rowContainer">
+                    <div class="figureContainer">
+                        <figure>
+                            <button class="imageButton" id="topLeftButton">
+                                <img class="mediumImage" id="topLeftImg" src="../img/idiophones.jpg" alt="A women hitting a bowl with a mallet">
+                            </button>
+                            <figcaption>
+                                <div class="pageHeaderContainer">
+                                    <h2 id="topLeftText">Idiophones</h2>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="figureContainer">
+                        <figure>
+                            <button class="imageButton" id="topRightButton">
+                                <img class="mediumImage" id="topRightImg" src="../img/membranophones.jpg" alt="A man beating a drum head">
+                            </button>
+                            <figcaption>
+                                <div class="pageHeaderContainer">
+                                    <h2 id="topRightText">Membranophones</h2>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="rowContainer">
+                    <div class="figureContainer">
+                        <figure>
+                            <button class="imageButton" id="botLeftButton">
+                                <img class="mediumImage" id="botLeftImg" src="../img/chordophones.jpg" alt="A woman plucking a harp">
+                            </button>
+                            <figcaption>
+                                <div class="pageHeaderContainer">
+                                    <h2 id="botLeftText">Chordophones</h2>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="figureContainer">
+                        <figure>
+                            <button class="imageButton" id="botRightButton">
+                                <img class="mediumImage" id="botRightImg" src="../img/aerophones.jpg" alt="A man blowing into the open air">
+                            </button>
+                            <figcaption>
+                                <div class="pageHeaderContainer">
+                                    <h2 id="botRightText">Aerophones</h2>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div id="info" hidden>
+                <div class="rowContainer">
+                    <div class="textContainer">
+                        <p id="definition">Bells are classified as struck idiophones. They make sound by being hit by a mallet. The sound then vibrates off the body of the instrument. Some bell variants come with an internal clapper which acts as the mallet, allowing the instrument to be played simply by being shaken.</p>
+                    </div>
+                    <div class="figureContainer">
+                        <figure>
+                            <img class="bigImage" id="normal" src="../img/bells.jpg" alt="A set of bells">
+                            <audio class="audioSpacing" id="sample" controls src="../audio/bells.mp3"></audio>
+                            <figcaption>
+                                Hear how it sounds!
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="pageHeaderContainer">
+                    <h2>Classical Applications</h2>
+                </div>
+                <div class="textContainer">
+                    <p id="classical">Bells are typically used in pieces to add a sharp vibrating sound. This can be very distinctive so they are usually used sparingly. They can also be used in order to mimic church bells. This can be symbolism of a celebration or something sacred.</p>
+                </div>
+                <div class="rowContainer">
+                    <div class="figureContainer">
+                        <figure>
+                            <img class="mediumImage" id="fun" src="../img/bells2.jpg" alt="Two bells attached to the front of an ox">
+                            <figcaption id="imgCaption">
+                                Cowbells are used to track free roaming livestock because of their sharp sound.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="columnContainer">
+                        <div class="pageHeaderContainer centerHeader">
+                            <h2>Famous Piece</h2>
+                        </div>
+                        <div class="textContainer">
+                            <p id="pieceInfo">Tchaikovsky's 1812 Overture is famous for ending with a wild cacophany of bells symbolizing the celebration in Moscow after Russia's defeat of Napolean and the French invasion in 1812.</p>
+                        </div>
+                        <div class="figureContainer">
+                            <figure>
+                                <audio class="audioSpacing" id="piece" controls src="../audio/Tchaikovsky-1812-Overture.mp3"></audio>
+                                <figcaption>
+                                    <cite id="pieceCaption">Tchaikovsky - 1812 Overture Finale</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="columnContainer">
+                    <div class="pageHeaderContainer centerHeader">
+                        <h2>Fun Fact!</h2>
+                    </div>
+                    <div class="textContainer">
+                        <p id="funFact">The smaller the bell the more high pitched the sound will be (and vice-versa). This is why large bell towers use big bells as they not only carry further but also have a much lower tone.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <small>™ & COPYRIGHT &copy; 2026 BY Landon Zosel Independent Contractor.<br>
+                ALL RIGHTS RESERVED.</small>
+            </div>     
+        </footer>
+    </div>
+    <script src="../js/two-step.js"></script>
+</body>
+</html>
