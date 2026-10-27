@@ -56,7 +56,9 @@ nav ul li {
     display: flex;
 }
 
-nav ul li a {
+.navButton {
+    all: unset;
+
     background-color: rgb(231, 223, 198);
     color: rgb(50, 63, 78);
     font-weight: bold;
@@ -71,6 +73,8 @@ nav ul li a {
     text-decoration: none;
     font-size: 0.75em;
     text-align: center;
+
+    cursor: pointer;
 }
 
 /* page title container */
@@ -191,19 +195,19 @@ figcaption {
     nav {
         display: flex;
     }
-    
+
     nav ul {
         flex-direction: row;
     }
 
-    nav ul li a {
+    .navButton {
         font-size: 1em;
     }
 }
 
 /* laptop rules */
 @media (min-width: 1250px) {
-    nav ul li a {
+    .navButton {
         font-size: 1.25em;
     }
 
@@ -229,4 +233,8 @@ figcaption {
         width: auto;
         max-width: 30vw;
     }
+}
+
+.hidden {
+    display: none;
 }

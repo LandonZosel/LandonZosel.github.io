@@ -14,14 +14,20 @@
     <div class="siteContainer">
         <header>
             <p class="headerTitle">The Orchestra</p>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="two-step-page/index.html">Instruments</a></li>
-                    <li><a href="static-page/index.html">Music Theory</a></li>
-                    <li><a href="contact-us-page/index.html">Contact Us</a></li>
-                </ul>
-            </nav>
+                <nav id="navBar" class="hidden">
+                    <ul>
+                        <li><a class="navButton" href="#">Home</a></li>
+                        <li><a class="navButton" href="two-step-page/index.html">Instruments</a></li>
+                        <li><a class="navButton" href="static-page/index.html">Music Theory</a></li>
+                        <li><a class="navButton" href="contact-us-page/index.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><button class="navButton hidden" id="logOutButton">Log Out</button></li>
+                        <li><button class="navButton" id="logInButton">Log In</button></li>
+                    </ul>
+                </nav>
         </header>
         <main class="mainContainer">
             <div class="pageTitleContainer">
@@ -88,24 +94,6 @@
             </div>     
         </footer>
     </div>
-    <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-        apiKey: "AIzaSyDG49YVN6JoKhv2OMddvKTF6Ik2j69GWmg",
-        authDomain: "landonzoselgithubio.firebaseapp.com",
-        projectId: "landonzoselgithubio",
-        storageBucket: "landonzoselgithubio.firebasestorage.app",
-        messagingSenderId: "462471670623",
-        appId: "1:462471670623:web:a2c2c57d6b98d267fb64ea"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    </script>
+    <script type="module" src="js/firebase.js"></script>
 </body>
 </html>
