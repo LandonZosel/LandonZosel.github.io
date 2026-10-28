@@ -41,7 +41,7 @@ function googleLogInPopup() {
 async function googleLogOut() {
     await signOut(auth).then(() => {
         //redirect to home page
-        window.location.replace("../index.html");
+        window.location.replace('/7/index.html');
     }).catch((error) => {
         // Handle Errors
         const errorCode = error.code;
@@ -51,7 +51,7 @@ async function googleLogOut() {
     });
 }
 
-function init() {
+function authInit() {
     //get auth buttons
     var logOutButton = document.querySelector('#logOutButton');
     var logInButton = document.querySelector('#logInButton');
@@ -83,4 +83,4 @@ function init() {
     logInButton.addEventListener('click', () => googleLogInPopup());
 }
 
-window.onload = init;
+window.addEventListener('load', authInit);

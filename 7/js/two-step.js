@@ -3,7 +3,7 @@
 //retrives data from JSON
 async function getData() {
     try {
-        const response = await fetch('/6/js/data.json');
+        const response = await fetch('/7/js/data.json');
         if (!response.ok) {
         throw new Error('Response status: ${response.status}');
         }
@@ -253,7 +253,7 @@ async function choiceSelected(position) {
 }
 
 //sets buttons to function
-function init() {
+function twoStepInit() {
     //get buttons
     var topLeftButton = document.querySelector('#topLeftButton');
     var topRightButton = document.querySelector('#topRightButton');
@@ -267,4 +267,4 @@ function init() {
     botRightButton.addEventListener('click', () => choiceSelected('botRight'));
 }
 
-window.onload = init;
+window.addEventListener('load', twoStepInit);
