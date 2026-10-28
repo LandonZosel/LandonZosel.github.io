@@ -1,17 +1,32 @@
 'use strict';
 
-//retrives data from JSON
-async function getData() {
-    try {
-        const response = await fetch('/7/js/data.json');
-        if (!response.ok) {
-        throw new Error('Response status: ${response.status}');
-        }
+import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-firestore.js";
 
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error(error.message);
+const db = getFirestore(window.app);
+
+//retrives choice data from firebase
+async function getChoiceData() {
+    const choiceRef = doc(db, "data", "choicePages");
+    const choiceSnap = await getDoc(choiceRef);
+
+    if (choiceSnap.exists()) {
+        console.log("Document data:", choiceSnap.data());
+        return choiceSnap.data();
+    } else {
+        console.log("No such document!");
+    }
+}
+
+//retrives instrument data from firebase
+async function getInstrumentData() {
+    const instrumentRef = doc(db, "data", "instrumentPages");
+    const instrumentSnap = await getDoc(instrumentRef);
+
+    if (instrumentSnap.exists()) {
+        console.log("Document data:", instrumentSnap.data());
+        return instrumentSnap.data();
+    } else {
+        console.log("No such document!");
     }
 }
 
@@ -98,14 +113,15 @@ function revealInfo() {
 //uses 'currentChoice' to decide if it is a first choice press or second
 async function choiceSelected(position) {
     if (typeof position === 'string') {
-        var data = await getData();
+        
 
         if (currentChoice === "none") {
             //must be first choice
+            var data = await getChoiceData();
             switch (position) {
                 case 'topLeft':
                     currentChoice = "idiophones";
-                    var page = data.choicePages.idiophones;
+                    var page = data.idiophones;
                     //set title
                     setText('h1', page.title);
                     var choices = page.choices;
@@ -114,7 +130,7 @@ async function choiceSelected(position) {
                     break;
                 case 'topRight':
                     currentChoice = "membranophones";
-                    var page = data.choicePages.membranophones;
+                    var page = data.membranophones;
                     //set title
                     setText('h1', page.title);
                     var choices = page.choices;
@@ -123,7 +139,7 @@ async function choiceSelected(position) {
                     break;
                 case 'botLeft':
                     currentChoice = "chordophones";
-                    var page = data.choicePages.chordophones;
+                    var page = data.chordophones;
                     //set title
                     setText('h1', page.title);
                     var choices = page.choices;
@@ -132,7 +148,7 @@ async function choiceSelected(position) {
                     break;
                 case 'botRight':
                     currentChoice = "aerophones";
-                    var page = data.choicePages.aerophones;
+                    var page = data.aerophones;
                     //set title
                     setText('h1', page.title);
                     var choices = page.choices;
@@ -143,25 +159,26 @@ async function choiceSelected(position) {
         } else if (currentChoice === "idiophones") {
             //hide figures
             hideFigures();
+            var data = await getInstrumentData();
             switch (position) {
                 case 'topLeft':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.bells;
+                    var instrumentData = data.bells;
                     setInfoFields(instrumentData);
                     break;
                 case 'topRight':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.cymbals;
+                    var instrumentData = data.cymbals;
                     setInfoFields(instrumentData);
                     break;
                 case 'botLeft':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.gongs;
+                    var instrumentData = data.gongs;
                     setInfoFields(instrumentData);
                     break;
                 case 'botRight':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.xylophone;
+                    var instrumentData = data.xylophone;
                     setInfoFields(instrumentData);
                     break;
             }
@@ -170,25 +187,26 @@ async function choiceSelected(position) {
         } else if (currentChoice === "membranophones") {
             //hide figures
             hideFigures();
+            var data = await getInstrumentData();
             switch (position) {
                 case 'topLeft':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.bassDrum;
+                    var instrumentData = data.bassDrum;
                     setInfoFields(instrumentData);
                     break;
                 case 'topRight':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.snareDrum;
+                    var instrumentData = data.snareDrum;
                     setInfoFields(instrumentData);
                     break;
                 case 'botLeft':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.tambourine;
+                    var instrumentData = data.tambourine;
                     setInfoFields(instrumentData);
                     break;
                 case 'botRight':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.timpani;
+                    var instrumentData = data.timpani;
                     setInfoFields(instrumentData);
                     break;
             }
@@ -197,25 +215,26 @@ async function choiceSelected(position) {
         } else if (currentChoice === "chordophones") {
             //hide figures
             hideFigures();
+            var data = await getInstrumentData();
             switch (position) {
                 case 'topLeft':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.doubleBass;
+                    var instrumentData = data.doubleBass;
                     setInfoFields(instrumentData);
                     break;
                 case 'topRight':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.harp;
+                    var instrumentData = data.harp;
                     setInfoFields(instrumentData);
                     break;
                 case 'botLeft':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.piano;
+                    var instrumentData = data.piano;
                     setInfoFields(instrumentData);
                     break;
                 case 'botRight':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.violin;
+                    var instrumentData = data.violin;
                     setInfoFields(instrumentData);
                     break;
             }
@@ -224,25 +243,26 @@ async function choiceSelected(position) {
         } else if (currentChoice === "aerophones") {
             //hide figures
             hideFigures();
+            var data = await getInstrumentData();
             switch (position) {
                 case 'topLeft':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.flute;
+                    var instrumentData = data.flute;
                     setInfoFields(instrumentData);
                     break;
                 case 'topRight':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.frenchHorn;
+                    var instrumentData = data.frenchHorn;
                     setInfoFields(instrumentData);
                     break;
                 case 'botLeft':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.oboe;
+                    var instrumentData = data.oboe;
                     setInfoFields(instrumentData);
                     break;
                 case 'botRight':
                     //update the info fields
-                    var instrumentData = data.instrumentPages.trombone;
+                    var instrumentData = data.trombone;
                     setInfoFields(instrumentData);
                     break;
             }

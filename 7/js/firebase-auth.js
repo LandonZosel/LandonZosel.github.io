@@ -2,7 +2,6 @@
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js";
 import { getAuth, signInWithPopup, signOut, onAuthStateChanged, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-firestore.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -15,15 +14,13 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+window.app = initializeApp(firebaseConfig);
 
-const auth = getAuth(app);
+const auth = getAuth(window.app);
 const provider = new GoogleAuthProvider();
 provider.setCustomParameters({
     prompt: 'select_account'
 });
-
-const db = getFirestore(app);
 
 function googleLogInPopup() {
     signInWithPopup(auth, provider)
