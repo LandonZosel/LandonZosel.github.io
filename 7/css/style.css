@@ -190,6 +190,34 @@ figcaption {
     cursor: pointer;
 }
 
+/* form */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.smallInput {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 10px;
+    width: 300px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.largeInput {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    height: 150px;
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
 /* ipad rules */
 @media (min-width: 750px) {
     nav {

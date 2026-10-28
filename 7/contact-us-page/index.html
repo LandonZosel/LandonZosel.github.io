@@ -33,8 +33,15 @@
             <div class="pageTitleContainer">
                 <h1>Contact Us</h1>
             </div>
-            <div class="textContainer">
-                <p>Work in Progress</p>
+            <div class="formContainer">
+                <label for="nameField"><h2>Name:</h2></label>
+                <input type="text" id="nameField" name="nameField"  class="smallInput">
+                <label for="emailField"><h2>Email:</h2></label>
+                <input type="text" id="emailField" name="emailField" class="smallInput">
+                <label for="messageField"><h2>Message:</h2></label>
+                <textarea id="messageField" name="messageField" class="largeInput"></textarea>
+                <button id="submitButton" class="navButton">Submit</button>
+                <p id="helperText"></p>
             </div>
         </main>
         <footer>
@@ -45,5 +52,6 @@
         </footer>
     </div>
     <script type="module" src="../js/firebase-auth.js"></script>
+    <script type="module" src="../js/contact-us.js"></script>
 </body>
 </html>
