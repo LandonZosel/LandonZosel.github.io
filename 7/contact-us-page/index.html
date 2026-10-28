@@ -14,12 +14,18 @@
     <div class="siteContainer">
         <header>
             <p class="headerTitle">The Orchestra</p>
-            <nav>
+            <nav id="navBar" class="hidden">
                 <ul>
                     <li><a class="navButton" href="../index.html">Home</a></li>
                     <li><a class="navButton" href="../two-step-page/index.html">Instruments</a></li>
                     <li><a class="navButton" href="../static-page/index.html">Music Theory</a></li>
                     <li><a class="navButton" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><button class="navButton hidden" id="logOutButton">Log Out</button></li>
+                    <li><button class="navButton" id="logInButton">Log In</button></li>
                 </ul>
             </nav>
         </header>
@@ -38,5 +44,6 @@
             </div>     
         </footer>
     </div>
+    <script type="module" src="../js/firebase-auth.js"></script>
 </body>
 </html>
