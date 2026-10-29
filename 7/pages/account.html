@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Landon Zosel">
+    <meta name="description" content="A website detailing information about the orchestra">
+    <meta name="keywords" content="Landon,Zosel,Music,Orchestra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Orchestra</title>
+    <link rel="icon" href="../img/music.ico">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="siteContainer">
+        <header>
+            <p class="headerTitle">The Orchestra</p>
+            <nav id="navBar" class="hidden">
+                <ul>
+                    <li><a class="navButton" href="#">Home</a></li>
+                    <li><a class="navButton" href="two-step.html">Instruments</a></li>
+                    <li><a class="navButton" href="static.html">Music Theory</a></li>
+                    <li><a class="navButton" href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a class="navButton hidden" id="accountButton" href="account.html">Account</a></li>
+                    <li><button class="navButton" id="logInButton">Log In</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainContainer">
+            <div class="pageTitleContainer">
+                <h1>Account</h1>
+            </div>
+            <div class="accountButtonList">
+                <a class="accountButton" id="changePasswordButton" href="https://myaccount.google.com" target="_blank">Google Change Password</a>
+                <div>
+                    <p>This account uses Google Sign-In.</p>
+                    <p>You can manage your password and security settings directly through your Google Account.</p>
+                </div>
+                <br>
+                <button class="accountButton" id="logOutButton">Log Out</button>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <small>™ & COPYRIGHT &copy; 2026 BY Landon Zosel Independent Contractor.<br>
+                ALL RIGHTS RESERVED.</small>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="../js/firebase-auth.js"></script>
+    <script type="module" src="../js/redirect.js"></script>
+    <script type="module" src="../js/account.js"></script>
+</body>
+</html>
