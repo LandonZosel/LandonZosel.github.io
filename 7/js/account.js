@@ -33,17 +33,7 @@ async function googleLogOut() {
 
 function accountInit() {
     //get account buttons
-    var changePasswordButton = document.querySelector('#changePasswordButton');
     var logOutButton = document.querySelector('#logOutButton');
-
-    //check user status
-    onAuthStateChanged(auth, (user) => {
-        if (user) {
-            // User is signed in, get email for change password href
-            const userEmail = encodeURIComponent(user.email);
-            changePasswordButton.href = "https://myaccount.google.com" + "/?email=" + userEmail;
-        }
-    });
 
     //set event listeners to buttons
     logOutButton.addEventListener('click', () => googleLogOut());
