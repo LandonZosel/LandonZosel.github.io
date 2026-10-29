@@ -38,7 +38,7 @@ function googleLogInPopup() {
 async function googleLogOut() {
     await signOut(auth).then(() => {
         //redirect to home page
-        window.location.replace('/7/index.html');
+        window.location.replace('/7/pages/index.html');
     }).catch((error) => {
         // Handle Errors
         const errorCode = error.code;

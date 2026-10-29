@@ -10,7 +10,7 @@ function redirectInit() {
             return;
         } else {
             // User is signed out, redirect
-            window.location.replace('/7/index.html');
+            window.location.replace('/7/pages/index.html');
         }
     });
 }
