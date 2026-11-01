@@ -33,7 +33,6 @@ async function getInstrumentData() {
 //sets the text of a query using elementId to text
 function setText(elementId, text) {
     if ((typeof elementId === 'string') && (typeof text === 'string')) {
-
         document.querySelector(elementId).textContent = text;
     }
 }
@@ -41,7 +40,6 @@ function setText(elementId, text) {
 //sets an image of a query using elementId to a src and its alt text
 function setImage(elementId, src, alt) {
     if ((typeof elementId === 'string') && (typeof src === 'string') && (typeof alt === 'string')) {
-
         var img = document.querySelector(elementId);
         img.src = src;
         img.alt = alt;
@@ -51,12 +49,9 @@ function setImage(elementId, src, alt) {
 //sets an audio's src of a query using elementId
 function setAudio(elementId, src) {
     if ((typeof elementId === 'string') && (typeof src === 'string')) {
-
         document.querySelector(elementId).src = src;
     }
 }
-
-let currentChoice = "none";
 
 //sets the choices from the first choice to the second
 function setFigures(elementId, figureData) {
@@ -99,22 +94,35 @@ function setInfoFields(data) {
     setAudio('#piece', audio.piece);
 }
 
-//hides figures after final choice made
-function hideFigures() {
-    document.querySelector('#choices').hidden = true;
+let choicesGroup;
+let loading;
+let infoGroup;
+
+//hides choices for loading and after final choice made
+function hideChoices() {
+    choicesGroup.hidden = true;
+    loading.hidden = false;
+}
+
+//reveals choices after loading
+function revealChoices() {
+    choicesGroup.hidden = false;
+    loading.hidden = true;
 }
 
 //reveals info after final choice made
 function revealInfo() {
-    document.querySelector('#info').hidden = false;
+    infoGroup.hidden = false;
+    loading.hidden = true;
 }
+
+let currentChoice = "none";
 
 //called when a button is pressed and passes in the position of that button to determine what to display
 //uses 'currentChoice' to decide if it is a first choice press or second
 async function choiceSelected(position) {
     if (typeof position === 'string') {
-        
-
+        hideChoices();
         if (currentChoice === "none") {
             //must be first choice
             var data = await getChoiceData();
@@ -156,9 +164,8 @@ async function choiceSelected(position) {
                     setFigures('#choices', choices);
                     break;
             }
+            revealChoices();
         } else if (currentChoice === "idiophones") {
-            //hide figures
-            hideFigures();
             var data = await getInstrumentData();
             switch (position) {
                 case 'topLeft':
@@ -185,8 +192,6 @@ async function choiceSelected(position) {
             //make info fields visible
             revealInfo();
         } else if (currentChoice === "membranophones") {
-            //hide figures
-            hideFigures();
             var data = await getInstrumentData();
             switch (position) {
                 case 'topLeft':
@@ -213,8 +218,6 @@ async function choiceSelected(position) {
             //make info fields visible
             revealInfo();
         } else if (currentChoice === "chordophones") {
-            //hide figures
-            hideFigures();
             var data = await getInstrumentData();
             switch (position) {
                 case 'topLeft':
@@ -241,8 +244,6 @@ async function choiceSelected(position) {
             //make info fields visible
             revealInfo();
         } else if (currentChoice === "aerophones") {
-            //hide figures
-            hideFigures();
             var data = await getInstrumentData();
             switch (position) {
                 case 'topLeft':
@@ -279,6 +280,11 @@ function twoStepInit() {
     var topRightButton = document.querySelector('#topRightButton');
     var botLeftButton = document.querySelector('#botLeftButton');
     var botRightButton = document.querySelector('#botRightButton');
+
+    //get groups
+    choicesGroup = document.querySelector('#choices');
+    loading = document.querySelector('#loading');
+    infoGroup = document.querySelector('#info');
 
     //set event listeners to choiceSelected function
     topLeftButton.addEventListener('click', () => choiceSelected('topLeft'));
